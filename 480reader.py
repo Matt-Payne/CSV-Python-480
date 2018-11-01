@@ -1,3 +1,4 @@
+#https://www.data.gov/local/
 tempStringAge = ''
 import csv
 totalHousesCounted = 0
@@ -12,8 +13,9 @@ for row in reader:
         totalPeopleInHouse = totalPeopleInHouse + float(temp)
 
         totalHousesCounted = totalHousesCounted + 1
-        print(totalPeopleInHouse)
-        print(totalHousesCounted)
+        # print(totalPeopleInHouse)
+        # print(totalHousesCounted)
 
 final = float(totalPeopleInHouse)/float(totalHousesCounted)
 print('number of people per Household under the age of 30 in LA ' + str(final))
+print('total houses counted ' + str(totalPeopleInHouse))
